@@ -1,0 +1,47 @@
+{
+  "name": "death-clock-chrome-extension",
+  "version": "0.0.1",
+  "description": "A simple Chrome extension to help you use your time more effectively by showing you how much time do you have.",
+  "main": "main.js",
+  "engines": {
+    "node": ">=9.0.0",
+    "npm": ">=5.0.0",
+    "yarn": ">=1.0.0"
+  },
+  "scripts": {
+    "clean": "rm -r ./dist/*",
+    "build": "cross-env NODE_ENV=production",
+    "start": "cross-env NODE_ENV=developmet",
+    "test": "cross-env NODE_ENV=test eslint ./src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexdevero/death-clock-chrome-extension.git"
+  },
+  "keywords": [
+    "addon",
+    "addons",
+    "browser-extension",
+    "clock",
+    "death",
+    "extension",
+    "chrome",
+    "chrome-extension",
+    "javascript",
+    "open",
+    "open-source",
+    "source"
+  ],
+  "author": "Alex Devero <deveroalex@gmail.com> (http://github.com/alexdevero)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexdevero/death-clock-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/alexdevero/death-clock-chrome-extension#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.1.1",
+    "eslint": "^4.12.1"
+  }
+}
