@@ -10,9 +10,10 @@
   },
   "scripts": {
     "clean": "rm -r ./dist/*",
-    "build": "cross-env NODE_ENV=production",
-    "start": "cross-env NODE_ENV=developmet",
-    "test": "cross-env NODE_ENV=test eslint ./src/**/*.js"
+    "build": "cross-env NODE_ENV=production npm run webpack",
+    "start": "cross-env NODE_ENV=developmet npm run watch",
+    "test": "cross-env NODE_ENV=test eslint ./src/**/*.js",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -38,10 +39,16 @@
     "url": "https://github.com/alexdevero/death-clock-chrome-extension/issues"
   },
   "homepage": "https://github.com/alexdevero/death-clock-chrome-extension#readme",
-  "dependencies": {},
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "copy-webpack-plugin": "^4.3.1",
+    "stylelint": "^8.4.0",
+    "webpack": "^3.10.0"
+  },
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
-    "cross-env": "^5.1.1",
-    "eslint": "^4.12.1"
+    "cross-env": "^5.1.3",
+    "eslint": "^4.15.0"
   }
 }
